@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM-3</title>
+</head>
+<body>
+    <input id="name" type="text" placeholder="enter name "/>
+    <input id="mobile" placeholder="mobile number"/>
+    <button>submit</button>
+    <h1></h1>
+    <h2></h2>
+</body>
+</html>
+    
+<script>
+    document.querySelector("button").
+    addEventListener("click",myfunction);
+
+    function myfunction() {
+        // console.log('function working')
+        let name = document.querySelector("#name").value;
+        let mobile = document.querySelector("#mobile").value;
+
+        document.querySelector("h1").innerText = name;
+        document.querySelector("h2").innerText = mobile;
+    }
+</script>
